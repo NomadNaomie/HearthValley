@@ -1215,5 +1215,5 @@ window.Maps = {
     walls:{},
     poi:[],
     jumpPoints:{},
-    },
+    }
 }
