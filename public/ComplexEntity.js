@@ -34,8 +34,6 @@ class ComplexEntity extends Entity{
 
     }
     update(update){
-        if (update.map.dead){console.log("de");}
-
         if (this.moveDistance > 0){
             this.updatePos();
         }else{
@@ -53,9 +51,6 @@ class ComplexEntity extends Entity{
         this.moveDistance -= this.speed;
         if (this.moveDistance == 0){
             const event = new CustomEvent("moveEnd",{detail:{id:this.id}});
-            if (this.id == "dani"){
-                console.log("move end");
-            }
             document.dispatchEvent(event);
         }
     }
