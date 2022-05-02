@@ -24,7 +24,6 @@ class Event{
         entity.spriteMap.animationIndex = 0;
         entity.spriteMap.animation = "idle-"+this.event.direction;
         entity.direction = this.event.direction;
-        console.log(entity,this.event.direction)
         resolve();
     }
     move(resolve){

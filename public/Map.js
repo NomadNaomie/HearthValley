@@ -89,7 +89,6 @@ class Map {
     }
     async checkMove(){
         let protag = this.entities['protag'];
-        console.log(protag.x/16,protag.y/16)
         let jumpPoint = this.jumpPoints[`${protag.x},${protag.y}`];
         if (this.ready && jumpPoint) {
             let eh = new Event({map:this,event:{type:"newMap",map:jumpPoint.map}});

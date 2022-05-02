@@ -45,7 +45,6 @@ class Entity{
         let event = this.agenda[this.agendaIndex];
         event.id = this.id;
 
-        console.log("Executing event:",event.type, "with id:",event.id, " at index:",this.agendaIndex, " in coordinates:",this.x,this.y);
         const handler = new Event({map,event:event});
         await handler.execute();
 

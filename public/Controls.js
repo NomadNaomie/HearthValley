@@ -6,7 +6,7 @@ class Cotnrols{
             "ArrowDown": "down",
             "ArrowLeft": "left",
             "ArrowRight": "right",
-            "d": "up",
+            "w": "up",
             "s": "down",
             "a": "left",
             "d": "right",

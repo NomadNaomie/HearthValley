@@ -16,7 +16,6 @@ class HearthTown {
         let music = document.getElementById("music");
         this.track = music.src;
         this.trackTime = music.currentTime;
-        console.log(this.trackTime);
         while (music.volume > 0.01){
             
             music.volume -= 0.01;
@@ -105,7 +104,6 @@ class HearthTown {
             }
         }
         if (!this.flags.veeNote){
-            console.log("No vee note")
             music.volume = 0.25;
             if (music.src != "snowfall.ogg"){
                 music.src = "snowfall.ogg";
